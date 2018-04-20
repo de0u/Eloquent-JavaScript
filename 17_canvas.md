@@ -491,12 +491,12 @@ helpful. We need a way to draw text to the ((canvas)).
 
 ## Text
 
-{{index stroking, filling, "fillColor property", "fillText method", "strokeText method"}}
+{{index stroking, filling, "fillStyle property", "fillText method", "strokeText method"}}
 
 A 2D canvas drawing context provides the methods `fillText` and
 `strokeText`. The latter can be useful for outlining letters, but
 usually `fillText` is what you need. It will fill the outline of the
-given ((text)) with the current `fillColor`.
+given ((text)) with the current `fillStyle`.
 
 ```{lang: "text/html"}
 <canvas></canvas>
@@ -703,8 +703,8 @@ previous transformations.
 
 So if we translate by 10 horizontal pixels twice, everything will be
 drawn 20 pixels to the right. If we first move the center of the
-coordinate system to (50,50) and then rotate by 20 ((degree))s (0.1π
-in ((radian))s), that rotation will happen _around_ point (50,50).
+coordinate system to (50,50) and then rotate by 20 ((degree))s (about
+0.1π ((radian))s), that rotation will happen _around_ point (50,50).
 
 {{figure {url: "img/transform.svg", alt: "Stacking transformations",width: "9cm"}}}
 

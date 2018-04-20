@@ -284,7 +284,7 @@ request is addressed to can't be found.
 {{index [path, URL], "relative URL"}}
 
 The first argument to `fetch` is the URL that should be requested.
-What that ((URL)) doesn't start with a protocol name (such as _http:_)
+When that ((URL)) doesn't start with a protocol name (such as _http:_)
 it is treated as relative, which means that it is interpreted relative
 to the current document. When it starts with a slash (/), it replaces
 the current path, which is the part after the server name. When it
@@ -483,8 +483,8 @@ but we'll start with a rough overview.
 
 {{index "input (HTML tag)", "type attribute"}}
 
-A lot of field types use the 
-`<input>` tag. This tag's `type` attribute is used to select the 
+A lot of field types use the
+`<input>` tag. This tag's `type` attribute is used to select the
 field's style. These are some commonly used `<input>` types:
 
 {{index "password field", checkbox, "radio button", "file field"}}
@@ -1170,7 +1170,7 @@ function to move to a new state.
 The use of `Object.assign` in the example is intended to create a new
 object that is a clone of the old `state.notes`, but with one property
 added or overwritten. `Object.assign` takes its first argument, and
-add all properties from any further arguments to it. Thus, giving it
+adds all properties from any further arguments to it. Thus, giving it
 an empty object will cause it to fill a fresh object. The ((square
 brackets)) notation in the third argument is used to create a property
 whose names is based on some dynamic value.
@@ -1257,7 +1257,7 @@ Send requests to fetch all three formats of this resource. Use the
 header named `Accept` to the desired media type.
 
 Finally, try asking for the media type `application/rainbows+unicorns`
-and see what happens.
+and see which status code that produces.
 
 {{if interactive
 
